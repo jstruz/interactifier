@@ -13,13 +13,13 @@ interactor(data, predictors, outcome)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{
-%%     ~~Describe \code{data} here~~
+The dataset you are using. This must be in the form of a dataframe.
 }
   \item{predictors}{
-%%     ~~Describe \code{predictors} here~~
+The predictors for which you want to find interactions between. This must be a character vector that comprises all the names of predictor variables in the dataset. Example: predictors=c('var1','var2',...,'varx')
 }
   \item{outcome}{
-%%     ~~Describe \code{outcome} here~~
+The outcome variable in the dataset which you which to regress each combination of predictors against. Example: outcome='outcomevariable'
 }
 }
 \details{
@@ -53,7 +53,6 @@ interactor(data, predictors, outcome)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-#THIS FUNCTION RETURNS A TABLE WITH P-VALUES FOR EACH INTERACTION
 interactor<- function(data, predictors, outcome){
   #create each combo
   combos<-combn(predictors, 2)
