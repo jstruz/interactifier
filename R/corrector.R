@@ -1,4 +1,3 @@
-#THIS FUNCTION TAKES THAT TABLE OF P-VALUES AND ONLY RETURNS SIGNIFICANT TERMS UNDER BONFERRONI CORRECTION
 corrector<-function(p_value, alpha=0.05){
   newalpha<-alpha/length(p_value)
   corrected_p<-data.frame(p_value[as.numeric(p_value)<newalpha])
