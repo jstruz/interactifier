@@ -1,4 +1,4 @@
-##' @import Boston
+##' @import MASS
 
 interactor<- function(data, predictors, outcome){
   #create each combo
