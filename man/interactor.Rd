@@ -53,25 +53,27 @@ interactor(data, predictors, outcome)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (data, predictors, outcome) 
-{
-    combos <- data.frame(combn(predictors, 2))
-    pastedcombos <- data.frame(1, dim(combos)[2])
-    for (i in 1:dim(combos)[2]) {
-        pastedcombos[i] <- paste(combos[1, i], combos[2, i], 
-            sep = "*")
-    }
-    sapply(pastedcombos, function(predictors) {
-        formula <- as.formula(paste(outcome, "~", predictors))
-        summs <- lm(formula, data = data)
-        output1 <- row.names(summary(summs)$coefficients[-1, 
-            ])
-        output2 <- summary(summs)$coefficients[-1, 4]
-        output3 <- cbind(output1, output2)
-        ptable <- t(output3)[, 3]
-        return(ptable)
-    })
+#THIS FUNCTION RETURNS A TABLE WITH P-VALUES FOR EACH INTERACTION
+interactor<- function(data, predictors, outcome){
+  #create each combo
+  combos<-combn(predictors, 2)
+  
+  #initialize pasted combos dataframe
+  pastedcombos<-NULL
+  
+  #paste combos together to input into model
+  for (i in 1:dim(combos)[2]){
+    pastedcombos[i]<-paste(combos[1,i],combos[2,i], sep='*')
   }
+  
+#apply over the list of combos to test them all in seperate linear regressions
+              sapply(pastedcombos, function(predictors) {
+              formula <- as.formula(paste(outcome, "~", predictors))
+              mods<- lm(formula, data = data)
+              p_value<-summary(mods)$coefficients[4,4]
+              return(p_value) 
+            })
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
