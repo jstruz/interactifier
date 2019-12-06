@@ -1,4 +1,4 @@
-##' @import MASS
+library(MASS)
 
 interactor<- function(data, predictors, outcome){
   #create each combo
