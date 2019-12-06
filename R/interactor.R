@@ -1,4 +1,3 @@
-#THIS FUNCTION RETURNS A TABLE WITH P-VALUES FOR EACH INTERACTION
 interactor<- function(data, predictors, outcome){
   #create each combo
   combos<-combn(predictors, 2)
