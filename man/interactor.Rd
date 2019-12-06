@@ -5,7 +5,7 @@
 Finds interaction terms between 2-order predictor combinations
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+The interactor function is used to find the p-values for interaction terms between every two-order combination of input predictors, with each combination of predictors tested seperately against the specified outcome.
 }
 \usage{
 interactor(data, predictors, outcome)
