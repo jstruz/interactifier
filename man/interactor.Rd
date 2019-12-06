@@ -2,7 +2,7 @@
 \alias{interactor}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Finds interaction terms between 2-order predictor combinations
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
