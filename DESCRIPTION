@@ -1,6 +1,6 @@
 Package: interactifier
 Type: Package
-Title: Finds Interaction P-Values and Creates Visualizations
+Title: Identifies and Visualizes Significant Interactions
 Version: 0.1.0
 Author: Joseph Struzeski, Wenjie Zeng, Zhi Duo
 Maintainer: Joseph Struzeski <jstruzeski@ufl.edu>
