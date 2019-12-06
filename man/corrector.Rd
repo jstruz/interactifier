@@ -50,12 +50,13 @@ corrector(ptable, alpha = 0.05)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (ptable, alpha = 0.05) 
-{
-    newalpha <- alpha/(dim(ptable)[2])
-    whatiwant2 <- ptable[, as.numeric(ptable[2, ]) < newalpha]
-    return(whatiwant2)
-  }
+#THIS FUNCTION TAKES THAT TABLE OF P-VALUES AND ONLY RETURNS SIGNIFICANT TERMS UNDER BONFERRONI CORRECTION
+corrector<-function(p_value, alpha=0.05){
+  newalpha<-alpha/length(p_value)
+  corrected_p<-data.frame(p_value[as.numeric(p_value)<newalpha])
+  colnames(corrected_p)<-"Significant p-values"
+  return(corrected_p)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
