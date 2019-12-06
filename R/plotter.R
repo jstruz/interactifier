@@ -15,7 +15,6 @@ plotter<-function(my_df,var1, var2,outcome){
     pull(z_grid) %>%
     matrix(nrow = length(x_grid)) %>%
     t() 
-  ?add_surface
   # Plot using plotly -------------------------------------------------------
   ##3D scatter plot
   selected_df%>%
