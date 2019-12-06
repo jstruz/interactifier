@@ -1,5 +1,3 @@
-library(MASS)
-
 interactor<- function(data, predictors, outcome){
   #create each combo
   combos<-combn(predictors, 2)
