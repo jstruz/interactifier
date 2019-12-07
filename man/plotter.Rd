@@ -31,7 +31,7 @@ The outcome variable you wish to use. Make sure that it is in quotes.
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
+%%  \item{plot }{Creates plotly 3D scatterplot and regression plane for the two predictors and the outcome variable}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
