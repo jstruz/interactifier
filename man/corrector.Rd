@@ -25,7 +25,7 @@ The desired alpha level (significance level). The default is alpha=0.05
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
+%%  \item{significant p values }{Returns a vector containing the p-values for the interaction terms for each 2-order predictor combination that are significant under Bonferroni correction}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
