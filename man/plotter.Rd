@@ -5,7 +5,7 @@
 Creates plotly 3-D scatterplot and regression plane for two predictors and an outcome variable
 }
 \description{
-"Plotter" will take the outcome variable and 2 predictor variables from a dataset and generate an interactive 3-D scatter plot with a regression plane. The regression plane will take into consideration the interaction between the two predictive variables as well.
+"Plotter" will take the outcome variable and 2 predictor variables from a dataset and generate an interactive 3-D scatter plot with a regression plane. The regression plane will take into consideration the interaction between the two predictor variables as well.
 }
 \usage{
 plotter(my_df,var1, var2,outcome)
