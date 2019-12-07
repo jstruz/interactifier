@@ -3,8 +3,8 @@ title: "Interactifier: A Package To Indentify and Visualize Significant Interact
 Authors: "Joseph Struzeski, Wenjie Zeng, Zhi Dou"
 output: html_document
 vignette: >
-  %\VignetteIndexEntry{Put the title of your vignette here}
-  %\VignetteEngine{knitr::rmarkdown}
+  \VignetteIndexEntry{Interactifier}
+  \VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
 
