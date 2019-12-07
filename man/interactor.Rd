@@ -48,9 +48,8 @@ The outcome variable in the dataset which you which to regress each combination 
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+interactor(data=Boston,predictors=c('indus',"crim","zn","chas","nox","rm","age","dis","rad","tax","ptratio","black","lstat"),
+                             outcome='medv')
 
 ## The function is currently defined as
 interactor<- function(data, predictors, outcome){
