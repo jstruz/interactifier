@@ -15,10 +15,6 @@ knitr::opts_chunk$set(
 library(interactifier)
 ```
 
-```{r}
-
-```
-
 ## Introduction
 When doing exploratory data analysis, identifying interactions between independent variables is vital since they may have significant impacts on the outcome. For example, Qi et al. (2009) observed a significant interaction between genetic disposition and the Western dietary pattern that contributed to the epidemic of type 2 diabetes (T2D) [1]. As another example, Lee et al. (2001) found that asbestos exposure multiplied risk of lung cancer by a similar factor in non-smokers and smokers [2]. When building a regression model, we often experience difficulty in making the decision as to whether to include the interaction terms between two independent variables in our final model if the significance of the interaction is not known. Missing important interaction terms can lead to inaccurate data interpretation and poor performace of predictive models. In order to solve the dilemma, we build a packaged named "interactifier" to test for and visualize all the significant interactions between each two-order combination of the selected independent variables from a dataset, regressed against a specified outcome variable.
 
