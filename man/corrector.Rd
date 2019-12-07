@@ -45,9 +45,9 @@ The desired alpha level (significance level). The default is alpha=0.05
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+INTERACTIONPVALS<-interactor(data=Boston,predictors=c('indus',"crim","zn","chas","nox","rm","age","dis","rad","tax","ptratio","black","lstat"),
+                             outcome='medv')
+SIGPVALS<-corrector(INTERACTIONPVALS)
 
 ## The function is currently defined as
 corrector<-function(p_value, alpha=0.05){
