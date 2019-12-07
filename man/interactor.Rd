@@ -28,7 +28,7 @@ The outcome variable in the dataset which you which to regress each combination 
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
-  \item{p values}{Returns a vector containing the p-values for the interaction terms for each 2-order predictor combination}
+  \item{pvalues}{Returns a vector containing the p-values for the interaction terms for each 2-order predictor combination}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
