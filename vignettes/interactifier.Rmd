@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 library(interactifier)
 ```
 
-```{r setup}
+```{r}
 
 ```
 
