@@ -7,15 +7,16 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+library(interactifier)
 ```
 
 ```{r setup}
-library(interactifier)
+
 ```
 
 ## Introduction
