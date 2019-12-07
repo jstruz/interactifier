@@ -3,7 +3,7 @@ title: "Interactifier: A Package To Indentify and Visualize Significant Interact
 Authors: "Joseph Struzeski, Wenjie Zeng, Zhi Dou"
 output: html_document
 vignette: >
-  \VignetteIndexEntry{Interactifier}
+  \VignetteIndexEntry{interactifier}
   \VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
