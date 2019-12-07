@@ -13,10 +13,10 @@ corrector(ptable, alpha = 0.05)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{ptable}{
-%%     ~~Describe \code{ptable} here~~
+A vector of interaction term p-values returned from the "interactor" function
 }
   \item{alpha}{
-%%     ~~Describe \code{alpha} here~~
+The desired alpha level (significance level). The default is alpha=0.05
 }
 }
 \details{
