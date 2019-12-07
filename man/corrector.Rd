@@ -5,7 +5,7 @@
 Outputs p-values below Bonferroni-corrected alpha
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+"Corrector" will take the p-value vector generated from the previous function "interactor", and compare all the p-values in this vector with the Bonferroni-corrected alpha value. If the p-value for the interaction term is significant after the comparison, these interaction terms with their p-values will be stored in a dataframe, which will then be returned.
 }
 \usage{
 corrector(ptable, alpha = 0.05)
