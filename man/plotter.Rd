@@ -2,7 +2,7 @@
 \alias{plotter}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Creates plotly 3D scatterplot and regression plane for two predictors and an outcome variable
+Creates plotly 3-D scatterplot and regression plane for two predictors and an outcome variable
 }
 \description{
 "Plotter" will take the outcome variable and 2 predictor variables from a dataset and generate an interactive 3-D scatter plot with a regression plane. The regression plane will take into consideration the interaction between the two predictive variables as well.
@@ -31,7 +31,7 @@ The outcome variable you wish to use. Make sure that it is in quotes.
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
-%%  \item{plot }{Creates plotly 3D scatterplot and regression plane for the two predictors and the outcome variable}
+  \item{plot}{Creates plotly 3-D scatterplot and regression plane for the two predictors and the outcome variable}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
