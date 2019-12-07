@@ -2,10 +2,10 @@
 \alias{plotter}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Creates 3D scatterplot and regression plane for two predictors and an outcome variable
+Creates plotly 3D scatterplot and regression plane for two predictors and an outcome variable
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+"Plotter" will take the outcome variable and 2 predictor variables from a dataset and generate an interactive 3-D scatter plot with a regression plane. The regression plane will take into consideration the interaction between the two predictive variables as well.
 }
 \usage{
 plotter(my_df,var1, var2,outcome)
@@ -13,16 +13,16 @@ plotter(my_df,var1, var2,outcome)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{my_df}{
-%%     ~~Describe \code{my_df} here~~
+The data frame you are using.
 }
   \item{var1}{
-%%     ~~Describe \code{var1} here~~
+The first predictor variable you wish to use. Make sure that it is in quotes.
 }
 \item{var2}{
-%%     ~~Describe \code{var2} here~~
+The second predictor variable you wish to use. Make sure that it is in quotes.
 }
 \item{outcome}{
-%%     ~~Describe \code{outcome} here~~
+The outcome variable you wish to use. Make sure that it is in quotes.
 }
 }
 \details{
@@ -51,9 +51,7 @@ plotter(my_df,var1, var2,outcome)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+plotter(my_df=Boston, var1='indus', var2='rm', outcome='medv')
 
 ## The function is currently defined as
 plotter<-function(my_df,var1, var2,outcome){
