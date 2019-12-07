@@ -5,10 +5,11 @@ Version: 0.1.0
 Author: Joseph Struzeski, Wenjie Zeng, Zhi Duo
 Maintainer: Joseph Struzeski <jstruzeski@ufl.edu>
 Description: Interactifier enables users to test for and visualize significant interactions between each two-order combination in a list of eligible independent variables in a linear regression against a dependent variable. This package is composed of three functions: "interactor" regresses each two-order predictor combination against the specified outcome variable and outputs each interaction coefficient p-value; "corrector" takes the output from "interactor" to select each of these p-values that are significant under Bonferroni correction; "plotter" plots an interactive 3-D graph and regression plane for two specified predictors and an outcome variable.
-Depends: plotly,tidyverse,MASS,knitr
-License: GPL-3
-Encoding: UTF-8
-LazyData: true
+Depends: plotly,tidyverse,MASS
 Suggests: 
     knitr,
     rmarkdown
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+
